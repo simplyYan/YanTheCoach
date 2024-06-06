@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YanTheCoach</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-dark text-white">
+    <div class="container">
+        <h1 class="text-center my-5">YanTheCoach</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Value example: John Doe" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" class="form-control" id="age" placeholder="Value example: 21" required>
+            </div>
+            <div class="form-group">
+                <label for="height">Height (cm)</label>
+                <input type="number" step="0.1" class="form-control" id="height" placeholder="Value example: 1,7" required>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight (kg)</label>
+                <input type="number" step="0.1" class="form-control" id="weight" placeholder="Value example: 65,3" required>
+            </div>
+            <div class="form-group">
+                <label for="activityLevel">Level of Physical Activity</label>
+                <select class="form-control" id="activityLevel" required>
+                    <option value="1.2">Sedentary</option>
+                    <option value="1.375">Slightly active</option>
+                    <option value="1.55">Moderately active</option>
+                    <option value="1.725">Very active</option>
+                    <option value="1.9">Extremely active</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Get report</button>
+        </form>
+        <div id="results" class="mt-5"></div>
+    </div>
+    <script src="jquery-3.5.1.slim.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    background: linear-gradient(to right, #2684ff, #26ffa8);
+    width: 200px;
+    height: 200px;
+    
+}
