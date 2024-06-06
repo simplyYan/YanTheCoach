@@ -1,3 +1,5 @@
+alert("An app developed independently by @simplyYan (Wesley Yan Soares Brehmer), under a CC0-1.0 license.")
+
 document.getElementById('userForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
