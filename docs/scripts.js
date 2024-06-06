@@ -39,10 +39,10 @@ function calculateWaterIntake(weight) {
 function displayResults(name, imc, idealWeightRange, calories, waterIntake) {
     const resultsDiv = document.getElementById('results');
     resultsDiv.innerHTML = `
-        <h2>Resultados para ${name}</h2>
-        <p><strong>IMC:</strong> ${imc}</p>
-        <p><strong>Peso Ideal:</strong> ${idealWeightRange[0]} kg - ${idealWeightRange[1]} kg</p>
-        <p><strong>Calorias Diárias:</strong> ${calories} kcal</p>
-        <p><strong>Ingestão Diária de Água:</strong> ${waterIntake} litros</p>
+        <h2>Results for ${name}</h2>
+        <p><strong>BMI:</strong> ${imc}</p>
+        <p><strong>Ideal weight:</strong> ${idealWeightRange[0]} kg - ${idealWeightRange[1]} kg</p>
+        <p><strong>Daily Calories:</strong> ${calories} kcal</p>
+        <p><strong>Daily Water Intake:</strong> ${waterIntake} litros</p>
     `;
 }
