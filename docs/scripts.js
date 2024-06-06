@@ -22,8 +22,8 @@ function calculateIMC(weight, height) {
 
 function calculateIdealWeight(height) {
     const heightInMeters = height / 100;
-    const minWeight = 18.5 * (heightInMeters * heightInMeters);
-    const maxWeight = 24.9 * (heightInMeters * heightInMeters);
+    const minWeight = 18.5 * heightInMeters * heightInMeters;
+    const maxWeight = 24.9 * heightInMeters * heightInMeters;
     return [minWeight.toFixed(2), maxWeight.toFixed(2)];
 }
 
