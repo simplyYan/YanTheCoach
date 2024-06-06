@@ -43,6 +43,6 @@ function displayResults(name, imc, idealWeightRange, calories, waterIntake) {
         <p><strong>BMI:</strong> ${imc}</p>
         <p><strong>Ideal weight:</strong> ${idealWeightRange[0]} kg - ${idealWeightRange[1]} kg</p>
         <p><strong>Daily Calories:</strong> ${calories} kcal</p>
-        <p><strong>Daily Water Intake:</strong> ${waterIntake} litros</p>
+        <p><strong>Daily Water Intake:</strong> ${waterIntake} liters</p>
     `;
 }
