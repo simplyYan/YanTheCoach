@@ -6,9 +6,10 @@ document.getElementById('userForm').addEventListener('submit', function(e) {
     const height = document.getElementById('height').value;
     const weight = document.getElementById('weight').value;
     const activityLevel = document.getElementById('activityLevel').value;
+    var result = calculateIdealWeight(height, weight);
 
-    const imc = calculateIMC(weight, height);
-    const idealWeightRange = calculateIdealWeight(height);
+    const imc = result.bmi;
+    const idealWeightRange = result.idealWeight;
     const calories = calculateCalories(weight, height, age, activityLevel);
     const waterIntake = calculateWaterIntake(weight);
 
@@ -20,11 +21,17 @@ function calculateIMC(weight, height) {
     return (weight / (heightInMeters * heightInMeters)).toFixed(2);
 }
 
-function calculateIdealWeight(height) {
-    const heightInMeters = height / 100;
-    const minWeight = 18.5 * heightInMeters * heightInMeters;
-    const maxWeight = 24.9 * heightInMeters * heightInMeters;
-    return [minWeight.toFixed(2), maxWeight.toFixed(2)];
+function calculateIdealWeight(height, weight) {
+    height = height / 100; 
+    
+    var bmi = weight / Math.pow(height, 2);
+    
+    var idealWeight = bmi * Math.pow(height, 2);
+    
+    return { 
+        bmi: bmi.toFixed(2),
+        idealWeight: idealWeight.toFixed(2) 
+    };
 }
 
 function calculateCalories(weight, height, age, activityLevel) {
