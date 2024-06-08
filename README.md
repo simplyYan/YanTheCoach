@@ -7,4 +7,4 @@ To access the app, you can use your browser. [Click here](https://simplyyan.gith
 https://simplyyan.github.io/YanTheCoach/
 ```
 
-<a href="https://s1mplyyan.itch.io/yanthecoach"><img src="https://raw.githubusercontent.com/simplyYan/YanTheCoach/main/itch.png" width="250px" height="200px"></a>
+<a href="https://s1mplyyan.itch.io/yanthecoach"><img src="https://raw.githubusercontent.com/simplyYan/YanTheCoach/main/itch.png" width="250px" height="170px"></a>
