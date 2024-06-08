@@ -6,3 +6,5 @@ To access the app, you can use your browser. [Click here](https://simplyyan.gith
 ```
 https://simplyyan.github.io/YanTheCoach/
 ```
+
+<iframe frameborder="0" src="https://itch.io/embed/2761366?bg_color=000000&amp;fg_color=ffffff&amp;link_color=5b60fa" width="552" height="167"><a href="https://s1mplyyan.itch.io/yanthecoach">YanTheCoach by s1mplyyan</a></iframe>
